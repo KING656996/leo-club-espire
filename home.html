@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+n<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leo Club Espire | Home</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  
+  <div id="loader">
+    <div class="loader-content">
+      <img src="Logo_rgb_Leo_2C_Omega_GrayText.png" alt="Leo Club Espire Logo" class="loader-logo" />
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  
+  <header>
+    <div class="logo">
+      <img src="Logo_rgb_Leo_2C_Omega_GrayText.png" alt="Leo Logo" />
+      <span>Leo Club Espire</span>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#activities">Activities</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <h1>Leadership • Experience • Opportunity</h1>
+    <p>
+      Leo Club Espire is a Tunisian youth club working under Lions Clubs International
+      to serve the community and develop future leaders.
+    </p>
+  </section>
+
+  
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+        LEO Club Tunis Aspire is a vibrant youth organization dedicated to leadership development and community service.
+        As part of the global Lions Clubs International network,
+        we strive to make a tangible difference through humanitarian projects, educational initiatives, and teamwork.
+    </p>
+  </section>
+
+  
+  <section id="activities">
+    <h2>Our Activities</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Community Service</h3>
+        <p>Charity actions and social support for local communities.</p>
+      </div>
+      <div class="card">
+        <h3>Youth Development</h3>
+        <p>Leadership workshops and skill-building sessions.</p>
+      </div>
+      <div class="card">
+        <h3>Environmental Actions</h3>
+        <p>Clean-up campaigns and sustainability initiatives.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>© 2025 Leo Club Espire – Tunisia</p>
+    <div class="social">
+      <a href="#"><img src="Logo_rgb_Leo_2C_Omega_GrayText.png" alt="" /> Instagram</a>
+      <a href="#"><img src="Logo_rgb_Leo_2C_Omega_GrayText.png" alt="" /> Facebook</a>
+      <a href="#"><img src="Logo_rgb_Leo_2C_Omega_GrayText.png" alt="" /> TikTok</a>
+      <a href="#"><img src="Logo_rgb_Leo_2C_Omega_GrayText.png" alt="" /> LinkedIn</a>
+      <a href="#"><img src="Logo_rgb_Leo_2C_Omega_GrayText.png" alt="" /> X</a>
+    </div>
+  </footer>
+
+  <!-- JS: LOADER + HERO ANIMATION -->
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      const hero = document.querySelector('.hero');
+      setTimeout(() => {
+        loader.classList.add('hidden');
+        requestAnimationFrame(() => hero.classList.add('show'));
+      }, 500);
+    });
+  </script>
+
+</body>
+</html>
